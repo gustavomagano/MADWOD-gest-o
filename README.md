@@ -20,3 +20,12 @@ App web (um único `index.html`) para gerir clientes, fornecedores, artigos/stoc
 
 ## Atualizar a app
 Substituir o `index.html` no repositório. Se o iPhone mostrar a versão antiga, fechar e reabrir a app.
+
+## Personalizador público (WordPress)
+`personalizar.html` é uma página pública só com o personalizador de t-shirts (sem dados da loja).
+No WordPress: editar a página → bloco **HTML personalizado** → colar:
+
+```html
+<iframe src="https://SEU-UTILIZADOR.github.io/madwod-gestao/personalizar.html" style="width:100%;height:1100px;border:0" loading="lazy" title="Personalizar t-shirt MadWod"></iframe>
+```
+Para mostrar um botão de WhatsApp, abra `personalizar.html` e preencha `const WHATSAPP=""` com o número (ex.: "351910000000").
